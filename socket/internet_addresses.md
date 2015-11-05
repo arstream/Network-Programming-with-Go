@@ -31,9 +31,9 @@ Similarly, if you want upto 1024 devices, you use a 22 bit network address and a
 
 Given an IP address of a device, and knowing how many bits N are used for the network address gives a relatively straightforward process for extracting the network address and the device address within that network. 
 Form a "network mask" which is a 32-bit binary number with all ones in the first N places and all zeroes in the remaining ones. 
-For example, if 16 bits are used for the network address, the mask is 11111111111111110000000000000000. 
+For example, if 16 bits are used for the network address, the mask is `11111111111111110000000000000000`. 
 It's a little inconvenient using binary, so decimal bytes are usually used. 
-The netmask for 16 bit network addresses is 255.255.0.0, for 24 bit network addresses it is 255.255.255.0, while for 23 bit addresses it would be 255.255.254.0 and for 22 bit addresses it would be 255.255.252.0.
+The netmask for 16 bit network addresses is `255.255.0.0`, for 24 bit network addresses it is `255.255.255.0`, while for 23 bit addresses it would be `255.255.254.0` and for 22 bit addresses it would be `255.255.252.0`.
 
 Then to find the network of a device, bit-wise AND it's IP address with the network mask, while the device address within the subnet is found with bit-wise AND of the 1's complement of the mask with the IP address. 
 
