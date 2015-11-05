@@ -63,9 +63,11 @@ In order to handle masking operations, there is the type
     type IPMask []byte
     
 There is a function to create a mask from a 4-byte IPv4 address
+
 ```go
 func IPv4Mask(a, b, c, d byte) IPMask
 ```
+
 Alternatively, there is a method of `IP` which returns the default mask
 
 ```go    
