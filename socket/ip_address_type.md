@@ -10,6 +10,7 @@ Note that you may not get back what you started with: the string form of `0:0:0:
 
 A program to illustrate this is 
 
+```golang
 /* IP
  */
 
@@ -36,3 +37,4 @@ func main() {
 	}
 	os.Exit(0)
 }
+```
