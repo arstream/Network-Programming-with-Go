@@ -47,4 +47,16 @@ with response
 
     The address is 127.0.0.1
     
+or as
+
+    IP 0:0:0:0:0:0:0:1
+    
+
+with response
+
+    The address is ::1
+    
+
+
+    
 
