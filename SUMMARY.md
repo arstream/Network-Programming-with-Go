@@ -1,0 +1,22 @@
+# Summary
+
+* [Introduction](README.md)
+* [Architecture](architecture/README.md)
+   * [Protocol Layers](architecture/protocol_layers.md)
+   * [Networking](architecture/networking.md)
+   * [Gateways](architecture/gateways.md)
+   * [Packet encapsulation](architecture/packet_encapsulation.md)
+   * [Connection Models](architecture/connection_models.md)
+   * [Communications Models](architecture/communications_models.md)
+   * [Distributed Computing Models](architecture/distributed_computing_models.md)
+   * [Client/Server System](architecture/clientserver_system.md)
+   * [Client/Server Application](architecture/clientserver_application.md)
+   * [Server Distribution](architecture/server_distribution.md)
+   * [Component Distribution](architecture/component_distribution.md)
+   * [Middleware](architecture/middleware_model.md)
+   * [Continuum of Processing](architecture/continuum_of_processing.md)
+   * [Points of Failure](architecture/points_of_failure.md)
+   * [Acceptance Factors](architecture/acceptance_factors.md)
+   * [Transparency](architecture/transparency.md)
+   * [Eight fallacies of distributed computing](architecture/eight_fallacies_of_distributed_computing.md)
+
