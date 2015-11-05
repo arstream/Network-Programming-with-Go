@@ -26,4 +26,5 @@
    * [Internet addresses](socket/internet_addresses.md)
    * [IP address type](socket/ip_address_type.md)
    * [Services](socket/services.md)
+   * TCP Sockets
 
