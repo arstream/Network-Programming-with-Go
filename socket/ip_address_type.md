@@ -148,7 +148,7 @@ A primary use of this type is to perform DNS lookups on IP host names.
 func ResolveIPAddr(net, addr string) (*IPAddr, os.Error)
 ```
     
-where net is one of "ip", "ip4" or "ip6". This is shown in the program 
+where `net` is one of `ip`, `ip4` or `ip6`. This is shown in the program 
 
 
 
