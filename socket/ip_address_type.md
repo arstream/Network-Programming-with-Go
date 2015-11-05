@@ -59,6 +59,7 @@ with response
 ### The type IPmask
 
 In order to handle masking operations, there is the type
+
 ```go
 type IPMask []byte
 ```
