@@ -55,7 +55,7 @@ For example, running `LookupPort tcp telnet` prints `Service port: 23`.
 
 ### The type TCPAddr
 
-The type `TCPAddr` is a structure containing an IP and a port:
+The `type TCPAddr` is a structure containing an IP and a port:
 
 ```go
 type TCPAddr struct {
