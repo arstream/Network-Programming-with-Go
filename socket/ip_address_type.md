@@ -38,3 +38,5 @@ func main() {
 	os.Exit(0)
 }
 ```
+
+If this is compiled to the executable `IP` then it can run for example as 
