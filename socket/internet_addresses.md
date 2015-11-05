@@ -42,4 +42,6 @@ Then to find the network of a device, bit-wise AND it's IP address with the netw
 
 The internet has grown vastly beyond original expectations. The initially generous 32-bit addressing scheme is on the verge of running out. There are unpleasant workarounds such as NAT addressing, but eventually we will have to switch to a wider address space. IPv6 uses 128-bit addresses. Even bytes becomes cumbersome to express such addresses, so hexadecimal digits are used, grouped into 4 digits and separated by a colon `":"`. A typical address might be `2002:c0e8:82e7:0:0:0:c0e8:82e7`.
 
-These addresses are not easy to remember! DNS will become even more important. There are tricks to reducing some addresses, such as eliding zeroes and repeated digits. For example, "localhost" is `0:0:0:0:0:0:0:1`, which can be shortened to `::1` 
+These addresses are not easy to remember! DNS will become even more important. There are tricks to reducing some addresses, such as eliding zeroes and repeated digits. For example, "localhost" is `0:0:0:0:0:0:0:1`, which can be shortened to `::1`.
+
+
