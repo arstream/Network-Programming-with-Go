@@ -80,8 +80,9 @@ Note that the string form of a mask is a hex number such as `ffff0000` for a mas
 
 A mask can then be used by a method of an IP address to find the network for that IP address
 
-    
+`go
 func (ip IP) Mask(mask IPMask) IP
+`
     
   
 
