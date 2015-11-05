@@ -24,4 +24,5 @@
    * [Introduction](socket/introduction.md)
    * [The TCP/IP stack](socket/the_tcpip_stack.md)
    * [Internet addresses](socket/internet_addresses.md)
+   * IP address type
 
