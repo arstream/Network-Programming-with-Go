@@ -122,5 +122,18 @@ func main() {
 }
 ```
 
+If this is compiled to `Mask` and run by
+
+    Mask 127.0.0.1
+    
+it will return
+
+    Address is  127.0.0.1  Default mask length is  8  Network is  127.0.0.0
+    
+
+    
+
+
+
     
 
