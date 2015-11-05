@@ -5,3 +5,5 @@ The OSI model was devised using a committee process wherein the standard was set
 The TCP/IP protocol was devised through a long-running DARPA project. This worked by implementation followed by RFCs (Request For Comment). TCP/IP is the principal Unix networking protocol. TCP/IP = Transmission Control Protocol/Internet Protocol.
 
 The TCP/IP stack is shorter than the OSI one: 
+
+![tcp_stack](tcp_stack.gif)
