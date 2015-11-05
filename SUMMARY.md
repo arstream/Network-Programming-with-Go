@@ -20,5 +20,5 @@
    * [Transparency](architecture/transparency.md)
    * [Eight fallacies of distributed computing](architecture/eight_fallacies_of_distributed_computing.md)
 * [Overview of Go languange](overview_of_go_languange.md)
-* Socket-level Programming
+* [Socket-level Programming](socket-level_programming.md)
 
