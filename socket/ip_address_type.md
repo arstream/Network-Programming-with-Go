@@ -186,6 +186,58 @@ Running `ResolveIP www.google.com` returns
     Resolved address is  66.102.11.104
     
 
+### Host lookup
+
+The function `ResolveIPAddr` will perform a DNS lookup on a hostname, and return a single IP address. 
+However, hosts may have multiple IP addresses, usually from multiple network interface cards. They may also have multiple host names, acting as aliases.
+
+```go
+func LookupHost(name string) (cname string, addrs []string, err os.Error)
+```
+    
+One of these addresses will be labeled as the "canonical" host name. If you wish to find the canonical name, use 
+
+```go
+func LookupCNAME(name string) (cname string, err os.Error)
+```
+
+This is shown in the following program     
+
+```go
+/* LookupHost
+ */
+
+package main
+
+import (
+	"net"
+	"os"
+	"fmt"
+)
+
+func main() {
+	if len(os.Args) != 2 {
+		fmt.Fprintf(os.Stderr, "Usage: %s hostname\n", os.Args[0])
+		os.Exit(1)
+	}
+	name := os.Args[1]
+
+	addrs, err := net.LookupHost(name)
+	if err != nil {
+		fmt.Println("Error: ", err.Error())
+		os.Exit(2)
+	}
+
+	for _, s := range addrs {
+		fmt.Println(s)
+	}
+	os.Exit(0)
+}
+```
+    
+Note that this function returns strings, not `IPAddress` values. 
+    
+
 
 
 
