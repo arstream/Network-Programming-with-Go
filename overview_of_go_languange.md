@@ -1,4 +1,4 @@
-# Overview of Go languange
+# Chapter 2 Overview of Go languange
 
  I don't feel like writing a chapter introducing Go right now, as there are other materials already available. There are several tutorials on the Go web site:
 
