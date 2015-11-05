@@ -40,3 +40,11 @@ func main() {
 ```
 
 If this is compiled to the executable `IP` then it can run for example as 
+
+    IP 127.0.0.1
+    
+with response
+
+    The address is 127.0.0.1
+    
+
