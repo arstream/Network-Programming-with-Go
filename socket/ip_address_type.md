@@ -235,7 +235,9 @@ func main() {
 }
 ```
     
-Note that this function returns strings, not `IPAddress` values. 
+Note that this function returns strings, not `IPAddress` values.
+
+
     
 
 
