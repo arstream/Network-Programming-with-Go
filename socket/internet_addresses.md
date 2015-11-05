@@ -18,7 +18,7 @@ The IP address of any device is generally composed of two parts: the address of 
 Once upon a time, the split between network address and internal address was simple and was based upon the bytes used in the IP address. 
 
 
-* In a class A network, the first byte identifies the network, while the last three identify the device. There are only 128 class A networks, owned by the very early players in the internet space such as IBM, the General Electric Company and MIT [1](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml)
+* In a class A network, the first byte identifies the network, while the last three identify the device. There are only 128 class A networks, owned by the very early players in the internet space such as IBM, the General Electric Company and MIT [[1]](http://www.iana.org/assignments/ipv4-address-space/ipv4-address-space.xml)
     
 * Class B networks use the first two bytes to identify the network and the last two to identify devices within the subnet. This allows upto 2^16 (65,536) devices on a subnet
     
