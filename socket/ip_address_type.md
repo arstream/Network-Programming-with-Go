@@ -131,6 +131,51 @@ it will return
     Address is  127.0.0.1  Default mask length is  8  Network is  127.0.0.0
     
 
+### The type IPAddr
+
+Many of the other functions and methods in the net package return a pointer to an `IPAddr`. 
+This is simply a structure containing an IP.
+
+```go    
+type IPAddr {
+    IP IP
+}
+```
+  
+A primary use of this type is to perform DNS lookups on IP host names.
+
+```go
+func ResolveIPAddr(net, addr string) (*IPAddr, os.Error)
+```
+    
+where net is one of "ip", "ip4" or "ip6". This is shown in the program 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
