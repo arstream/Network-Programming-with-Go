@@ -61,7 +61,7 @@ with response
 In order to handle masking operations, there is the type
 
     
-type IPMask []byte
+    type IPMask []byte
     
   
 
