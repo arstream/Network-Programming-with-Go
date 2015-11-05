@@ -1,7 +1,6 @@
 # Summary
 
 * [Introduction](README.md)
-   * Overview of Go language
 * [Architecture](architecture/README.md)
    * [Protocol Layers](architecture/protocol_layers.md)
    * [Networking](architecture/networking.md)
