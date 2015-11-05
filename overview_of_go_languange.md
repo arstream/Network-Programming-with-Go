@@ -10,6 +10,8 @@ There is an introductory textbook on Go: "Go Programming" by John P. Baugh avail
 
 There is a [#golang][2] group on Google+ 
 
+
+
 [1]: http://www.amazon.com/Go-Programming-John-P-Baugh/dp/1453636676/ref=sr_1_1?s=books&ie=UTF8&qid=1294310361&sr=1-1
 
 [2]: https://plus.google.com/u/0/s/%23Golang
