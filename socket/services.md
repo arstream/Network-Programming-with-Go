@@ -51,3 +51,26 @@ func main() {
 ```
 
 For example, running `LookupPort tcp telnet` prints `Service port: 23`.
+
+
+### The type TCPAddr
+
+The type `TCPAddr` is a structure containing an IP and a port:
+
+```go
+type TCPAddr struct {
+    IP   IP
+    Port int
+}
+```
+    
+The function to create a `TCPAddr` is `ResolveTCPAddr`
+
+```go
+func ResolveTCPAddr(net, addr string) (*TCPAddr, os.Error)
+```
+  
+where `net` is one of `"tcp"`, `"tcp4"` or `"tcp6"` and the `addr` is a string composed of a host name or IP address, followed by the port number after a `":"`, such as `"www.google.com:80"` or `"127.0.0.1:22"`. 
+If the address is an IPv6 address, which already has colons in it, then the host part must be enclosed in square brackets, such as `"[::1]:23"`. 
+Another special case is often used for servers, where the host address is zero, so that the TCP address is really just the port name, as in `":80"` for an HTTP server. 
+
