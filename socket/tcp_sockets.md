@@ -115,9 +115,10 @@ A server registers itself on a port, and listens on that port. Then it blocks on
 
 The relevant calls are
 
+```go
 func ListenTCP(net string, laddr *TCPAddr) (l *TCPListener, err os.Error)
 func (l *TCPListener) Accept() (c Conn, err os.Error)
-    
+```
 
 The argument net can be set to one of the strings "tcp", "tcp4" or "tcp6". The IP address should be set to zero if you want to listen on all network interfaces, or to the IP address of a single network interface if you only want to listen on that interface. If the port is set to zero, then the O/S will choose a port for you. Otherwise you can choose your own. Note that on a Unix system, you cannot listen on a port below 1024 unless you are the system supervisor, root, and ports below 128 are standardised by the IETF. The example program chooses port 1200 for no particular reason. The TCP address is given as ":1200" - all interfaces, port 1200.
 
