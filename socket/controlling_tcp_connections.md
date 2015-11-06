@@ -14,8 +14,9 @@ before any reads or writes on the socket.
 
 A client may wish to stay connected to a server even if it has nothing to send. It can use
 
+```go
 func (c *TCPConn) SetKeepAlive(keepalive bool) os.Error
-  
+```
 
-There are several other connection control methods, documented in the "net" package. 
+There are several other connection control methods, documented in the `"net"` package. 
 
