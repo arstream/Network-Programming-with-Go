@@ -185,3 +185,118 @@ Sun Aug 29 17:25:19 EST 2010Connection closed by foreign host.
 
 where `"Sun Aug 29 17:25:19 EST 2010"` is the output from the server. 
 
+
+### Multi-threaded server
+
+"echo" is another simple IETF service. This just reads what the client types, and sends it back:
+
+
+/* SimpleEchoServer
+ */
+package main
+
+import (
+	"net"
+	"os"
+	"fmt"
+)
+
+func main() {
+
+	service := ":1201"
+	tcpAddr, err := net.ResolveTCPAddr("tcp4", service)
+	checkError(err)
+
+	listener, err := net.ListenTCP("tcp", tcpAddr)
+	checkError(err)
+
+	for {
+		conn, err := listener.Accept()
+		if err != nil {
+			continue
+		}
+		handleClient(conn)
+		conn.Close() // we're finished
+	}
+}
+
+func handleClient(conn net.Conn) {
+	var buf [512]byte
+	for {
+		n, err := conn.Read(buf[0:])
+		if err != nil {
+			return
+		}
+		fmt.Println(string(buf[0:]))
+		_, err2 := conn.Write(buf[0:n])
+		if err2 != nil {
+			return
+		}
+	}
+}
+
+func checkError(err error) {
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Fatal error: %s", err.Error())
+		os.Exit(1)
+	}
+}
+
+While it works, there is a significant issue with this server: it is single-threaded. While a client has a connection open to it, no other cllient can connect. Other clients are blocked, and will probably time out. Fortunately this is easly fixed by making the client handler a go-routine. We have also moved the connection close into the handler, as it now belongs there
+
+
+/* ThreadedEchoServer
+ */
+package main
+
+import (
+	"net"
+	"os"
+	"fmt"
+)
+
+func main() {
+
+	service := ":1201"
+	tcpAddr, err := net.ResolveTCPAddr("ip4", service)
+	checkError(err)
+
+	listener, err := net.ListenTCP("tcp", tcpAddr)
+	checkError(err)
+
+	for {
+		conn, err := listener.Accept()
+		if err != nil {
+			continue
+		}
+		// run as a goroutine
+		go handleClient(conn)
+	}
+}
+
+func handleClient(conn net.Conn) {
+	// close connection on exit
+	defer conn.Close()
+
+	var buf [512]byte
+	for {
+		// read upto 512 bytes
+		n, err := conn.Read(buf[0:])
+		if err != nil {
+			return
+		}
+
+		// write the n bytes read
+		_, err2 := conn.Write(buf[0:n])
+		if err2 != nil {
+			return
+		}
+	}
+}
+
+func checkError(err error) {
+	if err != nil {
+		fmt.Fprintf(os.Stderr, "Fatal error: %s", err.Error())
+		os.Exit(1)
+	}
+}
