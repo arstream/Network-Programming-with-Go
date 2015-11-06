@@ -188,9 +188,9 @@ where `"Sun Aug 29 17:25:19 EST 2010"` is the output from the server.
 
 ### Multi-threaded server
 
-"echo" is another simple IETF service. This just reads what the client types, and sends it back:
+"echo" is another simple *IETF* service. This just reads what the client types, and sends it back:
 
-
+```go
 /* SimpleEchoServer
  */
 package main
@@ -241,10 +241,11 @@ func checkError(err error) {
 		os.Exit(1)
 	}
 }
+```
 
-While it works, there is a significant issue with this server: it is single-threaded. While a client has a connection open to it, no other cllient can connect. Other clients are blocked, and will probably time out. Fortunately this is easly fixed by making the client handler a go-routine. We have also moved the connection close into the handler, as it now belongs there
+While it works, there is a significant issue with this server: it is single-threaded. While a client has a connection open to it, no other client can connect. Other clients are blocked, and will probably time out. Fortunately this is easily fixed by making the client handler a go-routine. We have also moved the connection close into the handler, as it now belongs there
 
-
+```go
 /* ThreadedEchoServer
  */
 package main
@@ -300,3 +301,4 @@ func checkError(err error) {
 		os.Exit(1)
 	}
 }
+```
