@@ -17,6 +17,7 @@ To keep things simple, we shall use almost the simplest possible example: how to
 * The seventh and eight bytes are an arbitrary sequence number
 * The rest of the packet is user data
 
+
 The following program will prepare an IP connection, send a ping request to a host and get a reply. You may need to have root access in order to run it successfully.
 
 ```go
