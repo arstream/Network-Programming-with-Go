@@ -30,5 +30,5 @@
    * [Controlling TCP connections](socket/controlling_tcp_connections.md)
    * [UDP Datagrams](socket/udp_datagrams.md)
    * [Server listening on multiple sockets](socket/server_listening_on_multiple_sockets.md)
-   * The types Conn, PacketConn and Listener
+   * [The types Conn, PacketConn and Listener](socket/the_types_conn,_packetconn_and_listener.md)
 
