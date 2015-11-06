@@ -120,11 +120,11 @@ func ListenTCP(net string, laddr *TCPAddr) (l *TCPListener, err os.Error)
 func (l *TCPListener) Accept() (c Conn, err os.Error)
 ```
 
-The argument net can be set to one of the strings "tcp", "tcp4" or "tcp6". The IP address should be set to zero if you want to listen on all network interfaces, or to the IP address of a single network interface if you only want to listen on that interface. If the port is set to zero, then the O/S will choose a port for you. Otherwise you can choose your own. Note that on a Unix system, you cannot listen on a port below 1024 unless you are the system supervisor, root, and ports below 128 are standardised by the IETF. The example program chooses port 1200 for no particular reason. The TCP address is given as ":1200" - all interfaces, port 1200.
+The argument `net` can be set to one of the strings `"tcp"`, `"tcp4"` or `"tcp6"`. The IP address should be set to zero if you want to listen on all network interfaces, or to the IP address of a single network interface if you only want to listen on that interface. If the port is set to zero, then the O/S will choose a port for you. Otherwise you can choose your own. Note that on a Unix system, you cannot listen on a port below 1024 unless you are the system supervisor, root, and ports below 128 are standardized by the *IETF*. The example program chooses port 1200 for no particular reason. The TCP address is given as `":1200"` - all interfaces, port 1200.
 
 The program is
 
-
+```go
 /* DaytimeServer
  */
 package main
@@ -163,6 +163,7 @@ func checkError(err error) {
 		os.Exit(1)
 	}
 }
+```
 
 If you run this server, it will just wait there, not doing much. When a client connects to it, it will respond by sending the daytime string to it and then return to waiting for the next client.
 
@@ -170,16 +171,17 @@ Note the changed error handling in the server as compared to a client. The serve
 
 We haven't built a client. That is easy, just changing the previous client to omit the initial write. Alternatively, just open up a telnet connection to that host:
 
-telnet localhost 1200
+```telnet localhost 1200```
     
-
 This will produce output such as
 
+```
 $telnet localhost 1200
 Trying ::1...
 Connected to localhost.
 Escape character is '^]'.
 Sun Aug 29 17:25:19 EST 2010Connection closed by foreign host.
-    
+```    
 
-where "Sun Aug 29 17:25:19 EST 2010" is the output from the server. 
+where `"Sun Aug 29 17:25:19 EST 2010"` is the output from the server. 
+
