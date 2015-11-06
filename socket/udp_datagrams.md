@@ -14,4 +14,4 @@ func (c *UDPConn) ReadFromUDP(b []byte) (n int, addr *UDPAddr, err os.Error
 func (c *UDPConn) WriteToUDP(b []byte, addr *UDPAddr) (n int, err os.Error)
 ```
 
-The client for a UDP time service doesn't need to make many changes, just changing *...TCP...* calls to *...UDP...* calls: 
+The client for a UDP time service doesn't need to make many changes, just changing `...TCP...` calls to `...UDP...` calls: 
