@@ -6,7 +6,7 @@ ASCII is a 7-bit character set. A number of schemes have been developed that are
 
 Binary data transmitted in HTTP responses and requests is often translated into an ASCII form. This makes it easy to inspect the HTTP messages with a simple text reader without worrying about what strange 8-bit bytes might do to your display!
 
-One common format is Base64. Go has support for many binary-to-text formats, including base64.
+One common format is Base64. Go has support for many binary-to-text formats, including Base64.
 
 There are two principal functions to use for Base64 encoding and decoding:
 
