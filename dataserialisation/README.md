@@ -1,1 +1,3 @@
+# Chapter 4 Data serialisation
+
 Communication between a client and a service requires the exchange of data. This data may be highly structured, but has to be serialised for transport. This chapter looks at the basics of serialisation and then considers several techniques supported by Go APIs. 
