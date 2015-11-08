@@ -18,15 +18,18 @@ Programming languages use structured data such as
     * binary tree
     * objects with references to other objects
 
+
 None of IP, TCP or UDP packets know the meaning of any of these data types. All that they can contain is a sequence of bytes. 
 Thus an application has to *serialise* any data into a stream of bytes in order to write it, and *deserialise* the stream of bytes back into suitable data structures on reading it. These two operations are known as *marshalling* and *unmarshalling* respectively.
 
 For example, consider sending the following variable length table of two columns of variable length strings: 
 
-| fred | programmer |
+|  |  |
 | -- | -- |
+| fred | programmer |
 | liping | analyst |
 | sureerat | manager |
+
 
 This could be done by in various ways. For example, suppose that it is known that the data will be an unknown number of rows in a two-column table. Then a marshalled form could be
 
