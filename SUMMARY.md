@@ -35,6 +35,5 @@
    * [Conclusion](socket/conclusion.md)
 * [Data Serialisation](dataserialisation/README.md)
    * [Introduction](dataserialisation/introduction.md)
-       * Mutual agreement
    * [Mutual agreement](dataserialisation/mutual_agreement.md)
 
