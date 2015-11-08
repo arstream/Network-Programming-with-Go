@@ -63,7 +63,9 @@ The simple types are
 * CHARACTER STRING: Models values that are strings of characters
 
 
+
 Character strings can be from certain character sets
+
 
 * NumericString: 0,1,2,3,4,5,6,7,8,9, and space
 * PrintableString: Upper and lower case letters, digits, space, apostrophe, left/right parenthesis, plus sign, comma, hyphen, full stop, solidus, colon, equal sign, question mark
@@ -75,6 +77,7 @@ Character strings can be from certain character sets
 
 
 And finally, there are the structured types:
+
 
 * SEQUENCE: Models an ordered collection of variables of different type
 * SEQUENCE OF: Models an ordered collection of variables of the same type
