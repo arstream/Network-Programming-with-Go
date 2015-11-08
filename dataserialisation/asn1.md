@@ -1,7 +1,5 @@
 # ASN.1
 
- ASN.1
-
 Abstract Syntax Notation One (ASN.1) was originally designed in 1984 for the telecommunications industry. ASN.1 is a complex standard, and a subset of it is supported by Go in the package "asn1". It builds self-describing serialised data from complex data structures. Its primary use in current networking systems is as the encoding for X.509 certificates which are heavily used in authentication systems. The support in Go is based on what is needed to read and write X.509 certificates.
 
 Two functions allow us to marshal and unmarshal data
@@ -64,6 +62,7 @@ The simple types are
 * ENUMERATED: Model values of variables with at least three states
 * CHARACTER STRING: Models values that are strings of characters
 
+
 Character strings can be from certain character sets
 
 * NumericString: 0,1,2,3,4,5,6,7,8,9, and space
@@ -74,6 +73,7 @@ Character strings can be from certain character sets
 * IA5String: International Alphabet 5 (International ASCII)
 * GraphicString 25 All registered G sets, and space GraphicString
 
+
 And finally, there are the structured types:
 
 * SEQUENCE: Models an ordered collection of variables of different type
@@ -82,7 +82,8 @@ And finally, there are the structured types:
 * SET OF: Model an unordered collection of variables of the same type
 * CHOICE: Specify a collection of distinct types from which to choose one type
 * SELECTION: Select a component type from a specified CHOICE type
-* ANY: Enable an application to specify the type Note: ANY is a deprecated ASN.1 * Structured Type. It has been replaced with X.680 Open Type.
+* ANY: Enable an application to specify the type Note: ANY is a deprecated ASN.1 Structured Type. It has been replaced with X.680 Open Type.
+
 
 Not all of these are supported by Go. Not all possible values are supported by Go. The rules as given in the Go "asn1" package documentation are
 
@@ -96,6 +97,7 @@ Not all of these are supported by Go. Not all possible values are supported by G
 * Any of the above ASN.1 values can be written to an `interface{}`. The value stored in the interface has the corresponding Go type. For integers, that type is `int64`.
 * An ASN.1 SEQUENCE OF x or SET OF x can be written to a slice if an x can be written to * the slice's element type.
 * An ASN.1 SEQUENCE or SET can be written to a struct if each of the elements in the * sequence can be written to the corresponding element in the struct.
+
 
 Go places real restrictions on ASN.1. For example, ASN.1 allows integers of any size, while the Go implementation will only allow upto signed 64-bit integers. On the other hand, Go distinguishes between signed and unsigned types, while ASN.1 doesn't. So for example, transmitting a value of `uint64` may fail if it is too large for `int64`.
 
