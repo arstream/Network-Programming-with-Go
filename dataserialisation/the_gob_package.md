@@ -40,7 +40,7 @@ You use a `Decoder` to unmarshall the serialised data stream. This takes a `Read
 
 A program to store gob serialised data into a file is
 
-```
+```go
 /* SaveGob
  */
 
@@ -157,7 +157,7 @@ func checkError(err error) {
 
 A client to send a person's data and read it back ten times is
 
-```
+```go
 /* Gob EchoClient
  */
 package main
