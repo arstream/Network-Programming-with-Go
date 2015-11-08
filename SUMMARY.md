@@ -40,5 +40,5 @@
    * [ASN.1](dataserialisation/asn1.md)
    * [JSON](dataserialisation/json.md)
    * [The gob package](dataserialisation/the_gob_package.md)
-   * Encoding binary data as strings
+   * [Encoding binary data as strings](dataserialisation/encoding_binary_data_as_strings.md)
 
