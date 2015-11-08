@@ -36,5 +36,5 @@
 * [Data Serialisation](dataserialisation/README.md)
    * [Introduction](dataserialisation/introduction.md)
    * [Mutual agreement](dataserialisation/mutual_agreement.md)
-   * Self-describing data
+   * [Self-describing data](dataserialisation/self-describing_data.md)
 
