@@ -29,6 +29,7 @@ From the Go JSON package specification, marshalling uses the following type-depe
 * Channel, complex, and function values cannot be encoded in JSON. Attempting to encode such a value cause Marshal to return an `InvalidTypeError`.
 * JSON cannot represent cyclic data structures and Marshal does not handle them. Passing cyclic structures to Marshal will result in an infinite recursion.
 
+
 A program to store JSON serialised data into a file is
 
 ```go
@@ -250,7 +251,7 @@ func readFully(conn net.Conn) ([]byte, error) {
 }
 ```
 
-and the corrsponding server is
+and the corresponding server is
 
 ```go
 /* JSON EchoServer
