@@ -39,4 +39,5 @@
    * [Self-describing data](dataserialisation/self-describing_data.md)
    * [ASN.1](dataserialisation/asn1.md)
    * [JSON](dataserialisation/json.md)
+   * The gob package
 
