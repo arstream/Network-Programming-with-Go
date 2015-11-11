@@ -1,4 +1,4 @@
-# TCP Sockets
+## TCP Sockets
 
 When you know how to reach a service via its network and port IDs, what then? 
 If you are a client you need an API that will allow you to connect to a service and then to send messages to that service and read replies back from the service.
