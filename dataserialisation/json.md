@@ -1,4 +1,4 @@
-# JSON
+## JSON
 
 JSON stands for JavaScript Object Notation. It was designed to be a lighweight means of passing data between JavaScript systems. It uses a text-based format and is sufficiently general that it has become used as a general purpose serialisation method for many programming languages.
 
