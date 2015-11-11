@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 A client and server need to exchange information via messages. TCP and UDP provide the transport mechanisms to do this. The two processes also have to have a protocol in place so that message exchange can take place meaningfully.
 
