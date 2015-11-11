@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 There are many kinds of networks in the world. 
 These range from the very old such as serial links, through to wide area networks made from copper and fiber, to wireless networks of various kinds, both for computers and for telecommunications devices such as phones. 
