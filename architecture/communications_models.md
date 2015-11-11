@@ -1,4 +1,4 @@
-# Communications Models
+## Communications Models
 
 ### Message passing
 
