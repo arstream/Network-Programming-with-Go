@@ -1,4 +1,4 @@
-# Internet addresses
+## Internet addresses
 
 In order to use a service you must be able to find it. 
 The Internet uses an address scheme for devices such as computers so that they can be located. 
