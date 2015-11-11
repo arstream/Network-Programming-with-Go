@@ -1,4 +1,4 @@
-# Protocol Design
+## Protocol Design
 
  There are many possibilities and issues to be decided on when designing a protocol. Some of the issues include:
 
