@@ -1,4 +1,4 @@
-# Raw sockets and the type IPConn
+## Raw sockets and the type IPConn
 
 This section covers advanced material which most programmers are unlikely to need. it deals with *raw sockets*, which allow the programmer to build their own IP protocols, or use protocols other than TCP or UDP
 
