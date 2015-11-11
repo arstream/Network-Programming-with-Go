@@ -28,8 +28,8 @@ Pseudocode for a byte-format server is
 Go has basic support for managing byte streams. The interface `Conn` has methods
 
 ```go
-(c Conn) Read(b []byte) (n int, err os.Error)
-(c Conn) Write(b []byte) (n int, err os.Error)
+func (c Conn) Read(b []byte) (n int, err os.Error)
+func (c Conn) Write(b []byte) (n int, err os.Error)
 ```
 
 
