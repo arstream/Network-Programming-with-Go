@@ -1,4 +1,4 @@
-# Self-describing data
+## Self-describing data
 
 Self-describing data carries type information along with the data. For example, the previous data might get encoded as
 
