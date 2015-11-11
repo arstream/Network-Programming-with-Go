@@ -30,7 +30,8 @@ Go has basic support for managing byte streams. The interface `Conn` has methods
 ```go
 (c Conn) Read(b []byte) (n int, err os.Error)
 (c Conn) Write(b []byte) (n int, err os.Error)
-```    
+```
+
 
 and these methods are implemented by `TCPConn` and `UDPConn`. 
 
