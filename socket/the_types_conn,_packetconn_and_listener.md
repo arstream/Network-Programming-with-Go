@@ -1,4 +1,4 @@
-# The types Conn, PacketConn and Listener
+## The types Conn, PacketConn and Listener
 
  So far we have differentiated between the API for TCP and the API for UDP, using for example `DialTCP` and `DialUDP` returning a `TCPConn` and `UDPConn` respectively. The type `Conn` is an interface and both `TCPConn` and `UDPConn` implement this interface. To a large extent you can deal with this interface rather than the two types.
 
