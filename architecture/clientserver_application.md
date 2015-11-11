@@ -1,4 +1,4 @@
-# Client/Server Application
+## Client/Server Application
 
 And a third view is 
 
