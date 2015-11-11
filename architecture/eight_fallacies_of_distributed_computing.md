@@ -1,4 +1,4 @@
-# Eight fallacies of distributed computing
+## Eight fallacies of distributed computing
 
 Sun Microsystems was a company that performed much of the early work in distributed systems, and even had a mantra "The network is the computer." Based on their experience over many years a number of the scientists at Sun came up with the following list of fallacies commonly assumed:
 
