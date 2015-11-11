@@ -12,3 +12,49 @@ The important point is to whether one process is keeping state information about
 
 An example is reading a file. In single process applications the file handling code runs as part of the application. It maintains a table of open files and the location in each of them. Each time a read or write is done this file location is updated. In the DCE file system, the file server keeps track of a client's open files, and where the client's file pointer is. If a message could get lost (but DCE uses TCP) these could get out of synch. If the client crashes, the server must eventually timeout on the client's file tables and remove them. 
 
+![dce](../assets/dce.png)
+
+In NFS, the server does not maintain this state. The client does. Each file access from the client that reaches the server must open the file at the appropriate point, as given by the client, to perform the action.
+
+![nfs](../assets/nfs.png)
+
+ If the server maintains information about the client, then it must be able to recover if the client crashes. If information is not saved, then on each transaction the client must transfer sufficient information for the server to function.
+
+If the connection is unreliable, then additional handling must be in place to ensure that the two do not get out of synch. The classic example is of bank account transactions where the messages get lost. A transaction server may need to be part of the client-server system.
+
+### Application State Transition Diagram
+
+A state transition diagram keeps track of the current state of an application and the changes that move it to new states.
+
+Example: file transfer with login: 
+
+![app](../assets/app.png)
+
+This can also be expressed as a table 
+
+Current state 	|Transition 	|Next state
+      -         |       -       |    -
+login 	        |login failed   |login
+                |login succeeded|file transfer
+file transfer   |dir 	        |file transfer
+                |get            |file transfer
+                |logout         |login
+                |quit           |- 
+                
+
+### Client state transition diagrams                 
+
+The client state diagram must follow the application diagram. It has more detail though: it *writes* and then *reads*
+
+Current state 	|Write 	|Read 	|Next state
+-|-|-|-
+login 	|LOGIN name password| 	FAILED |	login
+        |                   |SUCCEEDED 	|file transfer
+file transfer| 	CD dir |	SUCCEEDED 	|file transfer
+||FAILED 	|file transfer
+|GET filename 	|#lines + contents 	|file transfer
+||ERROR 	|file transfer
+|DIR 	|#files + filenames 	|file transfer
+||ERROR 	|file transfer
+|quit |	none 	|quit
+logout |	none |	login 
