@@ -1,4 +1,4 @@
-# Component Distribution
+## Component Distribution
 
 A simple but effective way of decomposing many applications is to consider them as made up of three parts:
 
