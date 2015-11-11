@@ -1,4 +1,4 @@
-# The TCP/IP stack
+## The TCP/IP stack
 
 The OSI model was devised using a committee process wherein the standard was set up and then implemented. Some parts of the OSI standard are obscure, some parts cannot easily be implemented, some parts have not been implemented.
 
