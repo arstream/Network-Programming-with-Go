@@ -1,4 +1,4 @@
-# Transparency
+## Transparency
 
 The "holy grails" of distributed systems are to provide the following:
 
