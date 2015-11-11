@@ -1,4 +1,4 @@
-# Mutual agreement
+## Mutual agreement
 
 The previous section gave an overview of the issue of data serialisation. In practise, the details can be considerably more complex. For example, consider the first possibility, marshalling a table into the stream
 
