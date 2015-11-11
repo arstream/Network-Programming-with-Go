@@ -1,4 +1,4 @@
-# Networking
+## Networking
 
 A network is a communications system for connecting end systems called hosts. The mechanisms of connection might be copper wire, ethernet, fiber optic or wireless, but that won't concern us here. A local area network (LAN) connects computers that are close together, typically belonging to a home, small organization or part of a larger organization.
 
