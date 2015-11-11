@@ -1,4 +1,4 @@
-# Server listening on multiple sockets
+## Server listening on multiple sockets
 
 A server may be attempting to listen to multiple clients not just on one port, but on many. In this case it has to use some sort of polling mechanism between the ports.
 
