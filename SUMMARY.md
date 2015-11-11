@@ -43,5 +43,5 @@
    * [Encoding binary data as strings](dataserialisation/encoding_binary_data_as_strings.md)
 * [Application-Level Protocols](applevelprotocols/README.md)
    * [Introduction](applevelprotocols/introduction.md)
-   * Protocol Design
+   * [Protocol Design](applevelprotocols/protocol_design.md)
 
