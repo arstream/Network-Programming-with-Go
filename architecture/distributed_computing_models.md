@@ -1,4 +1,4 @@
-# Distributed Computing Models
+## Distributed Computing Models
 
 At the highest level, we could consider the equivalence or the non-equivalence of components of a distributed system. The most common occurrence is an asymmetric one: a client sends requests to a server, and the server responds. This is a *client-server* system.
 
