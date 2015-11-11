@@ -1,4 +1,4 @@
-# Client/Server System
+## Client/Server System
 
 Another view of a client server system is 
 
