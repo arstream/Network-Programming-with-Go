@@ -46,15 +46,63 @@ file transfer   |dir 	        |file transfer
 
 The client state diagram must follow the application diagram. It has more detail though: it *writes* and then *reads*
 
-Current state 	|Write 	|Read 	|Next state
--|-|-|-
-login 	|LOGIN name password| 	FAILED |	login
-        |                   |SUCCEEDED 	|file transfer
-file transfer| 	CD dir |	SUCCEEDED 	|file transfer
-||FAILED 	|file transfer
-|GET filename 	|#lines + contents 	|file transfer
-||ERROR 	|file transfer
-|DIR 	|#files + filenames 	|file transfer
-||ERROR 	|file transfer
-|quit |	none 	|quit
-logout |	none |	login 
+Current state  |Write 	    |Read               |Next state
+   -    |        -          |         -         |       -
+login 	|LOGIN name password|FAILED             |login
+        |                   |SUCCEEDED 	        |file transfer
+file transfer| 	CD dir      |SUCCEEDED 	        |file transfer
+        |                   |FAILED             |file transfer
+        |GET filename 	    |#lines + contents  |file transfer
+        |                   |ERROR              |file transfer
+        |DIR                |#files + filenames |file transfer
+        |                   |ERROR              |file transfer
+        |quit               |none               |quit
+logout  |none               |login 
+
+
+### Server state transition diagrams
+
+The server state diagram must also follow the application diagram. It also has more detail: it *reads* and then *writes*
+
+Current state  |Write 	    |Read               |Next state
+   -    |        -          |         -         |       -
+login 	|LOGIN name password|FAILED             |login
+        |                   |SUCCEEDED 	        |file transfer
+file transfer| 	CD dir      |SUCCEEDED 	        |file transfer
+        |                   |FAILED             |file transfer
+        |GET filename 	    |#lines + contents  |file transfer
+        |                   |ERROR              |file transfer
+        |DIR                |#files + filenames |file transfer
+        |                   |ERROR              |file transfer
+        |quit               |none               |quit
+logout  |none               |login 
+
+### Server pseudocode
+
+```
+state = login
+while true
+    read line
+    switch (state)
+        case login:
+            get NAME from line
+            get PASSWORD from line
+            if NAME and PASSWORD verified
+                write SUCCEEDED
+                state = file_transfer
+            else
+                write FAILED
+                state = login
+        case file_transfer:
+            if line.startsWith CD
+                get DIR from line
+                if chdir DIR okay
+                    write SUCCEEDED
+                    state = file_transfer
+                else
+                    write FAILED
+                    state = file_transfer
+            ...
+```
+
+We don't give the actual code for this server or client since it is pretty straightforward. 
