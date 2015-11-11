@@ -1,4 +1,4 @@
-# Connection Models
+## Connection Models
 
 In order for two computers to communicate, they must set up a path whereby they can send at least one message in a session. There are two major models for this:
 
