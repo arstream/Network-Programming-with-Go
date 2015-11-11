@@ -45,4 +45,5 @@
    * [Introduction](applevelprotocols/introduction.md)
    * [Protocol Design](applevelprotocols/protocol_design.md)
    * [Version control](applevelprotocols/version_control.md)
+   * Message Format
 
