@@ -1,4 +1,4 @@
-# Points of Failure
+## Points of Failure
 
 Distributed applications run in a complex environment. This makes them much more prone to failure than standalone applications on a single computer. The points of failure include
 
