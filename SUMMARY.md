@@ -41,5 +41,5 @@
    * [JSON](dataserialisation/json.md)
    * [The gob package](dataserialisation/the_gob_package.md)
    * [Encoding binary data as strings](dataserialisation/encoding_binary_data_as_strings.md)
-* Application-Level Protocols
+* [Application-Level Protocols](applevelprotocols/README.md)
 
