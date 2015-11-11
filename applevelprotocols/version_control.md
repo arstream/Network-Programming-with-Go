@@ -4,7 +4,7 @@ A protocol used in a client/server system will evolve over time, changing as the
 
 Each side should ideally be able to understand messages for its own version and all earlier ones. It should be able to write replies to old style queries in old style response format. 
 
-![version](version.png)
+![version](../assets/version.png)
 
 The ability to talk earlier version formats may be lost if the protocol changes too much. In this case, you need to be able to ensure that no copies of the earlier version still exist - and that is generally impossible.
 
