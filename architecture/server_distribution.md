@@ -1,4 +1,4 @@
-# Server Distribution
+## Server Distribution
 
 A client-server systems need not be simple. The basic model is single client, single server 
 
