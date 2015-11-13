@@ -19,7 +19,7 @@
    * [Acceptance Factors](architecture/acceptance_factors.md)
    * [Transparency](architecture/transparency.md)
    * [Eight fallacies of distributed computing](architecture/eight_fallacies_of_distributed_computing.md)
-* [Overview of Go languange](overview/README.md)
+* [Overview of Go language](overview/README.md)
 * [Socket-level Programming](socket/README.md)
    * [Introduction](socket/introduction.md)
    * [The TCP/IP stack](socket/the_tcpip_stack.md)
