@@ -60,4 +60,5 @@
    * [UTF-16 and Go](encoding/utf-16_and_go.md)
    * [Unicode gotcha's](encoding/unicode_gotchas.md)
    * [ISO 8859 and Go](encoding/iso_8859_and_go.md)
+   * Other character sets and Go
 
