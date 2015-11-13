@@ -59,5 +59,5 @@
    * [UTF-8 Go and runes](encoding/utf-8_go_and_runes.md)
    * [UTF-16 and Go](encoding/utf-16_and_go.md)
    * [Unicode gotcha's](encoding/unicode_gotchas.md)
-   * ISO 8859 and Go
+   * [ISO 8859 and Go](encoding/iso_8859_and_go.md)
 
