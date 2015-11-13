@@ -4,7 +4,7 @@
 
 Unicode is an embracing standard character set intended to cover all major character sets in use. It includes European, Asian, Indian and many more. It is now up to version 5.2 and has over 107,000 characters. The number of code points now exceeds 65,536, that is. more than 2^16. This has implications for character encodings.
 
-The first 256 code points correspond to ISO 8859-1, with US ASCII as the first 128. There is thus a backward compatability with these major character sets, as the code points for ISO 8859-1 and ASCII are exactly the same in Unicode. The same is not true for other character sets: for example, while most of the Big5 characters are also in Unicode, the code points are not the same. The [page]( http://moztw.org/docs/big5/table/unicode1.1-obsolete.txt) contains one example of a (large) table mapping from Big5 to Unicode.
+The first 256 code points correspond to ISO 8859-1, with US ASCII as the first 128. There is thus a backward compatibility with these major character sets, as the code points for ISO 8859-1 and ASCII are exactly the same in Unicode. The same is not true for other character sets: for example, while most of the Big5 characters are also in Unicode, the code points are not the same. The [page]( http://moztw.org/docs/big5/table/unicode1.1-obsolete.txt) contains one example of a (large) table mapping from Big5 to Unicode.
 
 To represent Unicode characters in a computer system, an encoding must be used. The encoding UCS is a two-byte encoding using the code point values of the Unicode characters. However, since there are now too many characters in Unicode to fit them all into 2 bytes, this encoding is obsolete and no longer used. Instead there are:
 
