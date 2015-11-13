@@ -56,5 +56,5 @@
    * [ASCII](encoding/ascii.md)
    * [ISO 8859](encoding/iso_8859.md)
    * [Unicode](encoding/unicode.md)
-   * UTF-8, Go and runes
+   * UTF-8 Go and runes
 
