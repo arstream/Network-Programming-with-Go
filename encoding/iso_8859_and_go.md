@@ -44,7 +44,7 @@ func unicodeStrToISO(str string) []byte {
 }
 ```   
 
-In a similar way you cacn change an array of ISO 8859-2 bytes into a UTF-8 string:
+In a similar way you can change an array of ISO 8859-2 bytes into a UTF-8 string:
 
 ```go
 var isoToUnicodeMap = map[uint8] int {
