@@ -55,5 +55,5 @@
    * [Definitions](encoding/definitions.md)
    * [ASCII](encoding/ascii.md)
    * [ISO 8859](encoding/iso_8859.md)
-   * Unicode
+   * [Unicode](encoding/unicode.md)
 
