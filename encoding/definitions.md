@@ -45,7 +45,7 @@ Content-Type: text/html; charset=ISO-8859-4
 Content-Encoding: gzip
 ```  
 
-which says that the character set is ISO 8859-4 (corresponding to certain countries in Europe) with the default encoding, but then gziped. The second part - content encoding - is what we are referring to as "transfer encoding" (IETF RFC 2130).
+which says that the character set is ISO 8859-4 (corresponding to certain countries in Europe) with the default encoding, but then `gzip`ed. The second part - content encoding - is what we are referring to as "transfer encoding" (IETF RFC 2130).
 
 But how do you read this information? Isn't it encoded? Don't we have a chicken and egg situation? Well, no. The convention is that such information is given in ASCII (to be precise, US ASCII) so that a program can read the headers and then adjust its encoding for the rest of the document. 
 
