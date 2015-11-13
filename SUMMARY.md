@@ -54,4 +54,5 @@
    * [Introduction](encoding/introduction.md)
    * [Definitions](encoding/definitions.md)
    * [ASCII](encoding/ascii.md)
+   * ISO 8859
 
