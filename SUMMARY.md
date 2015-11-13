@@ -52,5 +52,5 @@
    * [Summary](applevelprotocols/summary.md)
 * [Managing character sets and encodings](encoding/README.md)
    * [Introduction](encoding/introduction.md)
-   * Definitions
+   * [Definitions](encoding/definitions.md)
 
