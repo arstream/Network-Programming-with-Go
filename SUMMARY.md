@@ -51,4 +51,5 @@
    * [State](applevelprotocols/state.md)
    * [Summary](applevelprotocols/summary.md)
 * [Managing character sets and encodings](encoding/README.md)
+   * Introduction
 
