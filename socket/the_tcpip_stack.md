@@ -6,7 +6,7 @@ The TCP/IP protocol was devised through a long-running DARPA project. This worke
 
 The TCP/IP stack is shorter than the OSI one: 
 
-![tcp_stack](tcp_stack.gif)
+![tcp_stack](../assets/tcp_stack.gif)
 
 TCP is a connection-oriented protocol, UDP (User Datagram Protocol) is a connectionless protocol. 
 
