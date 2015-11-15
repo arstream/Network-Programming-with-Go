@@ -3,5 +3,9 @@
         "katex@1.1.3",
         "github@2.0.0"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/tumregels/Network-Programming-with-Go"
+        }
+    }
 }
