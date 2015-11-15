@@ -65,4 +65,5 @@
 * [Security](security/README.md)
    * [ISO security architecture](security/iso_security_architecture.md)
    * [Data integrity](security/data_integrity.md)
+   * Symmetric key encryption
 
