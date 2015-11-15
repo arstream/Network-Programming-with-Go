@@ -41,4 +41,4 @@ func main() {
 }
 ```
 
-Blowfish is not in the Go 1 distribution. Instead it is on the http://code.google.com/p/ site. You have to install it by running "go get" in a directory where you have source that needs to use it. 
+Blowfish is not in the Go 1 distribution. You have to install it by running `go get golang.org/x/crypto/blowfish ` in a directory where you have source that needs to use it. 
