@@ -62,5 +62,5 @@
    * [ISO 8859 and Go](encoding/iso_8859_and_go.md)
    * [Other character sets and Go](encoding/other_character_sets_and_go.md)
    * [Conclusion](encoding/conclusion.md)
-* Security
+* [Security](security/README.md)
 
