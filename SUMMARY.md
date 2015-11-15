@@ -63,5 +63,5 @@
    * [Other character sets and Go](encoding/other_character_sets_and_go.md)
    * [Conclusion](encoding/conclusion.md)
 * [Security](security/README.md)
-   * ISO security architecture
+   * [ISO security architecture](security/iso_security_architecture.md)
 
