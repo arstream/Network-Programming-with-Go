@@ -1,2 +1,2 @@
-### Data integrity
+## Data integrity
 
