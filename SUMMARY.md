@@ -64,5 +64,5 @@
    * [Conclusion](encoding/conclusion.md)
 * [Security](security/README.md)
    * [ISO security architecture](security/iso_security_architecture.md)
-   * Data integrity
+   * [Data integrity](security/data_integrity.md)
 
