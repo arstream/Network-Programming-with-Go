@@ -4,11 +4,11 @@ There are two major mechanisms used for encrypting data. The first uses a single
 
 As with hashing, there are many encryption algorithms. Many are now known to have weaknesses, and in general algorithms become weaker over time as computers get faster. Go has support for several symmetric key algorithms such as Blowfish and DES.
 
-The algorithms are *block* algorithms. That is they work on blocks of data. If you data is not aligned to the block size, then you will have to pad it with extra blanks at the end.
+The algorithms are *block* algorithms. That is they work on blocks of data. If your data is not aligned to the block size, then you will have to pad it with extra blanks at the end.
 
-Each algorith is represented by a *Cipher* object. This is created by *NewCipher* in the appropriate package, and takes the symmetric key as parameter.
+Each algorithm is represented by a *Cipher* object. This is created by *NewCipher* in the appropriate package, and takes the symmetric key as parameter.
 
-Once you have a cipher, you can use it to encrypt and decrypt blocks of data. The blocks have to be 8-bit blocks for Blowfish. A program to illustrate this is 
+Once you have a cipher, you can use it to encrypt and decrypt blocks of data. The blocks have to be 8-byte blocks for Blowfish. A program to illustrate this is 
 
 ```go
 /* Blowfish
