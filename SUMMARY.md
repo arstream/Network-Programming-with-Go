@@ -66,5 +66,5 @@
    * [ISO security architecture](security/iso_security_architecture.md)
    * [Data integrity](security/data_integrity.md)
    * [Symmetric key encryption](security/symmetric_key_encryption.md)
-   * Public key encryption
+   * [Public key encryption](security/public_key_encryption.md)
 
