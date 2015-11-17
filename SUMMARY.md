@@ -74,4 +74,5 @@
    * [Overview of HTTP](http/overview_of_http.md)
    * [Simple user-agents](http/simple_user-agents.md)
    * [Configuring HTTP requests](http/configuring_http_requests.md)
+   *  The Client object
 
