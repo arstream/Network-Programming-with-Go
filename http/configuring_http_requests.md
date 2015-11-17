@@ -1,4 +1,4 @@
-# Configuring HTTP requests
+## Configuring HTTP requests
 
 Go also supplies a lower-level interface for user agents to communicate with HTTP servers. As you might expect, not only does it give you more control over the client requests, but requires you to spend more effort in building the requests. However, there is only a small increase.
 
