@@ -71,6 +71,7 @@
    * [TLS](security/tls.md)
    * [Conclusion](security/conclusion.md)
 * [HTTP](http/README.md)
+   * Configuring HTTP requests
    * [Overview of HTTP](http/overview_of_http.md)
    * [Simple user-agents](http/simple_user-agents.md)
        * Configuring HTTP requests
