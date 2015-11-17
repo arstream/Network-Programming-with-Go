@@ -76,4 +76,5 @@
    * [Configuring HTTP requests](http/configuring_http_requests.md)
    * [The Client object](http/the_client_object.md)
    * [Proxy handling](http/proxy_handling.md)
+   * HTTPS connections by clients
 
