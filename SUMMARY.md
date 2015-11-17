@@ -77,5 +77,5 @@
    * [The Client object](http/the_client_object.md)
    * [Proxy handling](http/proxy_handling.md)
    * [HTTPS connections by clients](http/https_connections_by_clients.md)
-   * Servers
+   * [Servers](http/servers.md)
 
