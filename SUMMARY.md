@@ -73,5 +73,4 @@
 * [HTTP](http/README.md)
    * [Overview of HTTP](http/overview_of_http.md)
    * [Simple user-agents](http/simple_user-agents.md)
-       * Configuring HTTP requests
 
