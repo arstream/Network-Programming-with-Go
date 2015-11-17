@@ -139,6 +139,6 @@ Arbitrarily complex behaviour can be built, of course.
 
 Go also supplies a lower-level interface for servers. Again, this means that as the programmer you have to do more work. You first make a TCP server, and then wrap a `ServerConn` around it. Then you read `Request`'s and write `Response`'s.
 
-# Conclusion
+## Conclusion
 
 Go has extensive support for HTTP. This is not surprising, since Go was partly invented to fill a need by Google for their own servers.
