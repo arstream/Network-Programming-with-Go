@@ -75,4 +75,5 @@
    * [Simple user-agents](http/simple_user-agents.md)
    * [Configuring HTTP requests](http/configuring_http_requests.md)
    * [The Client object](http/the_client_object.md)
+   * Proxy handling
 
