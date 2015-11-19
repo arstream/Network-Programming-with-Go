@@ -78,5 +78,5 @@
    * [Proxy handling](http/proxy_handling.md)
    * [HTTPS connections by clients](http/https_connections_by_clients.md)
    * [Servers](http/servers.md)
-* Templates
+* [Templates](templates/README.md)
 
