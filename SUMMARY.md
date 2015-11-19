@@ -80,5 +80,5 @@
    * [Servers](http/servers.md)
 * [Templates](templates/README.md)
    * [Inserting object values](templates/inserting_object_values.md)
-   * Pipelines
+   * [Pipelines](templates/pipelines.md)
 
