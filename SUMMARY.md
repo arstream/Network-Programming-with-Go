@@ -79,5 +79,5 @@
    * [HTTPS connections by clients](http/https_connections_by_clients.md)
    * [Servers](http/servers.md)
 * [Templates](templates/README.md)
-   * Inserting object values 
+   * [Inserting object values](templates/inserting_object_values.md)
 
