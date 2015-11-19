@@ -98,7 +98,7 @@ The output is
 ```
 The name is jan.
 
-    An email is "jan at newmarch.name"
-    
-    An email is "jan.newmarch at gmail.com"
+An email is "jan at newmarch.name"
+
+An email is "jan.newmarch at gmail.com"
 ```
