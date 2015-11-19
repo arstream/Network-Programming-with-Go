@@ -81,5 +81,5 @@
 * [Templates](templates/README.md)
    * [Inserting object values](templates/inserting_object_values.md)
    * [Pipelines](templates/pipelines.md)
-   * Defining functions
+   * [Defining functions](templates/defining_functions.md)
 
