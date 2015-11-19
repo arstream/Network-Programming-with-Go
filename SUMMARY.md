@@ -83,4 +83,5 @@
    * [Pipelines](templates/pipelines.md)
    * [Defining functions](templates/defining_functions.md)
    * [Variables](templates/variables.md)
+   * Conditional statements
 
