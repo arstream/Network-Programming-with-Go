@@ -227,6 +227,6 @@ func cycleFunc(ss ...string) (*generator, error) {
 
 # Conclusion
 
-The Go template package is useful for certain kinds of text transformations involving inserting values of objects. It does not have the power of, say, regular expressions, but is faster and in many cases will be easier to use than regular expressions 
+The Go template package is useful for certain kinds of text transformations involving inserting values of objects. It does not have the power of, say, regular expressions, but is faster and in many cases will be easier to use than regular expressions.
 
 
