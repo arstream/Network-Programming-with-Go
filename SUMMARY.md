@@ -85,5 +85,5 @@
    * [Variables](templates/variables.md)
    * [Conditional statements](templates/conditional_statements.md)
 * [A Complete Web Server](webserver/README.md)
-   * Static pages
+   * [Static pages](webserver/static_pages.md)
 
