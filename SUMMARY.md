@@ -88,5 +88,5 @@
    * [Static pages](webserver/static_pages.md)
    * [Templates](webserver/templates.md)
    * [The Chinese Dictionary](webserver/the_chinese_dictionary.md)
-   * Flash cards
+   * [Flash cards](webserver/flash_cards.md)
 
