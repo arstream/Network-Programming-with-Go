@@ -86,4 +86,5 @@
    * [Conditional statements](templates/conditional_statements.md)
 * [A Complete Web Server](webserver/README.md)
    * [Static pages](webserver/static_pages.md)
+   * Templates
 
