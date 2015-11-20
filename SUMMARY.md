@@ -87,4 +87,5 @@
 * [A Complete Web Server](webserver/README.md)
    * [Static pages](webserver/static_pages.md)
    * [Templates](webserver/templates.md)
+   * The Chinese Dictionary
 
