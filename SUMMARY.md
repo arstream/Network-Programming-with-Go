@@ -91,5 +91,5 @@
    * [Flash cards](webserver/flash_cards.md)
    * [The Complete Server](webserver/the_complete_server.md)
    * [Other Bits: JavaScript and CSS](webserver/other_bits_javascript_and_css.md)
-* HTML
+* [HTML](html/README.md)
 
