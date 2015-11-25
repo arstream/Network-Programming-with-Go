@@ -6,7 +6,7 @@ A simple but effective way of decomposing many applications is to consider them 
 * Application logic
 * Data access 
 
-The *presentation component* is responsible for interactions with the user, both displaying data and gathering input. it may be a modern GUI interface with buttons, lists, menus, etc, or an older command-line style interface, asking questions and getting answers. The details are not important at this level.
+The *presentation component* is responsible for interactions with the user, both displaying data and gathering input. it may be a modern GUI interface with buttons, lists, menus, etc., or an older command-line style interface, asking questions and getting answers. The details are not important at this level.
 
 The *application logic* is responsible for interpreting the users' responses, for applying business rules, for preparing queries and managing responses from the their component.
 
@@ -26,7 +26,7 @@ Based on this threefold decomposition of applications, Gartner considered how th
 
 ![gartner1](../assets/gartner1.gif)
 
-Modern mobile phones make good examples of this: due to limited memory they may store a small part of a database locally so that they can usuall respond quickly. However, if data is required that is not held locally, then a request may be made to a remote database for that additional data.
+Modern mobile phones make good examples of this: due to limited memory they may store a small part of a database locally so that they can usual respond quickly. However, if data is required that is not held locally, then a request may be made to a remote database for that additional data.
 
 Google maps forms another good example. Al of the maps reside on Google's servers. When one is requested by a user, the "nearby" maps are also downloaded into a small database in the browser. When the user moves the map a little bit, the extra bits required are already in the local store for quick response. 
 
@@ -36,7 +36,7 @@ Google maps forms another good example. Al of the maps reside on Google's server
 
 ![gartner2](../assets/gartner2.gif)
 
-There are many examples of scuh systems: NFS, Microsoft shares, DCE, etc.
+There are many examples of such systems: NFS, Microsoft shares, DCE, etc.
 
 
 ### Example: Web
@@ -77,6 +77,6 @@ The modern Web is a good example of the rightmost of these. The backend is made 
 
 ### Fat vs thin
 
-A common labeling of components is "fat" or "thin". Fat components take up lots of memory and do complex processing. Thin components on the other hand, do little of either. There don't seem to be any "normal" size components, only fat or thin!
+A common labelling of components is "fat" or "thin". Fat components take up lots of memory and do complex processing. Thin components on the other hand, do little of either. There don't seem to be any "normal" size components, only fat or thin!
 
-Fatness or thinness is a relative concept. Browsers are often labeled as thin because "all they do is display web pages". Firefox on my Linux box takes nearly 1/2 a gigabyte of memory, which I don't regard as small at all! 
+Fatness or thinness is a relative concept. Browsers are often labelled as thin because "all they do is display web pages". Firefox on my Linux box takes nearly 1/2 a gigabyte of memory, which I don't regard as small at all! 
