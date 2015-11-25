@@ -93,5 +93,5 @@
    * [Other Bits: JavaScript and CSS](webserver/other_bits_javascript_and_css.md)
 * [HTML](html/README.md)
 * [XML](xml/README.md)
-   * Parsing XML
+   * [Parsing XML](xml/parsing_xml.md)
 
