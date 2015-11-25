@@ -1,7 +1,7 @@
 ## Introduction
 
 There are many kinds of networks in the world. 
-These range from the very old such as serial links, through to wide area networks made from copper and fiber, to wireless networks of various kinds, both for computers and for telecommunications devices such as phones. 
+These range from the very old such as serial links, through to wide area networks made from copper and fibre, to wireless networks of various kinds, both for computers and for telecommunications devices such as phones. 
 These networks obviously differ at the physical link layer, but in many cases they also differed at higher layers of the OSI stack.
 
 Over the years there has been a convergence to the "internet stack" of IP and TCP/UDP. 
