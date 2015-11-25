@@ -196,7 +196,7 @@ However, hosts may have multiple IP addresses, usually from multiple network int
 func LookupHost(name string) (cname string, addrs []string, err os.Error)
 ```
     
-One of these addresses will be labeled as the "canonical" host name. If you wish to find the canonical name, use 
+One of these addresses will be labelled as the "canonical" host name. If you wish to find the canonical name, use 
 
 ```go
 func LookupCNAME(name string) (cname string, err os.Error)
@@ -237,36 +237,3 @@ func main() {
 ```
     
 Note that this function returns strings, not `IPAddress` values.
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-    
-
