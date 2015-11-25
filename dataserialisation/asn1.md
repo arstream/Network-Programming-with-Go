@@ -2,16 +2,16 @@
 
 Abstract Syntax Notation One (ASN.1) was originally designed in 1984 for the telecommunications industry. ASN.1 is a complex standard, and a subset of it is supported by Go in the package "asn1". It builds self-describing serialised data from complex data structures. Its primary use in current networking systems is as the encoding for X.509 certificates which are heavily used in authentication systems. The support in Go is based on what is needed to read and write X.509 certificates.
 
-Two functions allow us to marshal and unmarshal data
+Two functions allow us to marshal and unmarshall data
 
 ```go
 func Marshal(val interface{}) ([]byte, os.Error)
 func Unmarshal(val interface{}, b []byte) (rest []byte, err os.Error)
 ```    
 
-The first marshals a data value into a serialised byte array, and the second unmarshals it. However, the first argument of type `interface` deserves further examination. Given a variable of a type, we can marshal it by just passing its value. To unmarshal it, we need a variable of a named type that will match the serialised data. The precise details of this are discussed later. But we also need to make sure that the variable is allocated to memory for that type, so that there is actually existing memory for the unmarshalling to write values into.
+The first marshals a data value into a serialised byte array, and the second unmarshalls it. However, the first argument of type `interface` deserves further examination. Given a variable of a type, we can marshal it by just passing its value. To unmarshall it, we need a variable of a named type that will match the serialised data. The precise details of this are discussed later. But we also need to make sure that the variable is allocated to memory for that type, so that there is actually existing memory for the unmarshalling to write values into.
 
-We illustrate with an almost trivial example, of marshalling and unmarshalling an integer. We can pass an integer value to `Marshal` to return a byte array, and unmarshal the array into an integer variable as in this program:
+We illustrate with an almost trivial example, of marshalling and unmarshalling an integer. We can pass an integer value to `Marshal` to return a byte array, and unmarshall the array into an integer variable as in this program:
 
 ```go
 /* ASN.1
@@ -128,7 +128,7 @@ _, err1 := asn1.Unmarshal(&newtime, mdata)
 
 Both `LocalTime` and `new` handle pointers to a `*time.Time`, and Go looks after this special case.
 
-In general, you will probably want to marshal and unmarshal structures. Apart from the special case of time, Go will happily deal with structures, but not with pointers to structures. Operations such as `new` create pointers, so you have to dereference them before marshalling/unmarshalling them. Go normally dereferences pointers for you when needed, but not in this case. These both work for a type `T`:
+In general, you will probably want to marshal and unmarshall structures. Apart from the special case of time, Go will happily deal with structures, but not with pointers to structures. Operations such as `new` create pointers, so you have to dereference them before marshalling/unmarshalling them. Go normally dereferences pointers for you when needed, but not in this case. These both work for a type `T`:
 
 ```go
 // using variables
@@ -150,7 +150,7 @@ asn1.Unmarshal(newT2, mdata2)
 
 Any suitable mix of pointers and variables will work as well.
 
-The fields of a structure must all be exportable, that is, field names must begin with an uppercase letter. Go uses the `reflect` package to marshal/unmarshal structures, so it must be able to examine all fields. This type cannot be marshalled:
+The fields of a structure must all be exportable, that is, field names must begin with an uppercase letter. Go uses the `reflect` package to marshall/unmarshall structures, so it must be able to examine all fields. This type cannot be marshalled:
 
 ```go
 type T struct {
@@ -305,5 +305,5 @@ func readFully(conn net.Conn) ([]byte, error) {
 
 This connects to the service given in a form such as `localhost:1200`, reads the TCP packet and decodes the ASN.1 content back into a string, which it prints.
 
-We should note that neither of these two - the client or the server - are compatable with the text-based clients and servers of the last chapter. 
+We should note that neither of these two - the client or the server - are compatible with the text-based clients and servers of the last chapter. 
 This client and server are exchanging ASN.1 encoded data values, not textual strings. 
