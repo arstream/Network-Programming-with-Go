@@ -32,7 +32,7 @@ struct T {
 }
 ```
 
-To some extent it can cope with type coercions so that an `int` field can be broadened into an `int64`, but not with incompatable types such as `int` and `uint`.
+To some extent it can cope with type coercions so that an `int` field can be broadened into an `int64`, but not with incompatible types such as `int` and `uint`.
 
 To use Gob to marshall a data value, you first need to create an `Encoder`. This takes a `Writer` as parameter and marshalling will be done to this write stream. The encoder has a method `Encode` which marshalls the value to the stream. This method can be called multiple times on multiple pieces of data. Type information for each data type is only written once, though.
 
