@@ -9,7 +9,7 @@ Distributed applications run in a complex environment. This makes them much more
 * There may be network address conflicts
 * Network elements such as routers could fail
 * Transmission errors may lose messages
-* The client and server versions may be incompatable
+* The client and server versions may be incompatible
 * The server's network card could fail
 * The server system may have h/w problems
 * The server s/w may crash
