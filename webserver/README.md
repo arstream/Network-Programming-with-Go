@@ -1,4 +1,4 @@
-# A Complete Web Server 
+# Chapter 10 A Complete Web Server 
 
 This chapter is principally a lengthy illustration of the HTTP chapter, building a complete Web server in Go. It also shows how to use templates in order to use expressions in text files to insert variable values and to generate repeated sections. 
 
