@@ -98,4 +98,5 @@
    * [Marshalling XML](xml/marshalling_xml.md)
    * [XHTML and HTML](xml/xhtml_and_html.md)
 * [Remote Procedure Call](rpc/README.md)
+   * Go RPC
 
