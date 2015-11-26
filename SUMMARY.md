@@ -97,5 +97,5 @@
    * [Unmarshalling XML](xml/unmarshalling_xml.md)
    * [Marshalling XML](xml/marshalling_xml.md)
    * [XHTML and HTML](xml/xhtml_and_html.md)
-* Remote Procedure Call
+* [Remote Procedure Call](rpc/README.md)
 
