@@ -135,7 +135,7 @@ func checkError(err error) {
 }
 ```
 
-# Conclusion
+## Conclusion
 
 RPC is a popular means of distributing applications. Several ways of doing it have been presented here. What is missing from Go is support for the currently fashionable (but extremely badly enginereed) SOAP RPC mechanism. 
 
