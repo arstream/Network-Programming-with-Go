@@ -1,4 +1,4 @@
-# Templates
+# Chapter 9 Templates
 
 Many languages have mechanisms to convert strings from one form to another. Go has a template mechanism to convert strings based on the content of an object supplied as an argument. While this is often used in rewriting HTML to insert object values, it can be used in other situations. Note that this material doesn't have anything explicitly to do with networking, but may be useful to network programs. 
 
