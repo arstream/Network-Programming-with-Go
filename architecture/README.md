@@ -1,4 +1,4 @@
-# Chapter 1 Architecture
+# Architecture
 
 You can't build a system without some idea of what you want to build. And you can't build it if you don't know the environment in which it will work. 
 
