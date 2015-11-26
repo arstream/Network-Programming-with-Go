@@ -1,4 +1,4 @@
-# XML
+# Chapter 12 XML
 
 XML is a significant markup language mainly intended as a means of serialising data structures as a text document. Go has basic support for XML document processing.
 
