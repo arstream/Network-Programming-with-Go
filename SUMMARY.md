@@ -32,7 +32,6 @@
    * [The types Conn, PacketConn and Listener](socket/the_types_conn,_packetconn_and_listener.md)
    * [Raw sockets and the type IPConn](socket/raw_sockets_and_the_type_ipconn.md)
 * [Data Serialisation](dataserialisation/README.md)
-   * [Introduction](dataserialisation/introduction.md)
    * [Mutual agreement](dataserialisation/mutual_agreement.md)
    * [Self-describing data](dataserialisation/self-describing_data.md)
    * [ASN.1](dataserialisation/asn1.md)
