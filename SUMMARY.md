@@ -62,7 +62,6 @@
    * [Public key encryption](security/public_key_encryption.md)
    * [X.509 certificates](security/x509_certificates.md)
    * [TLS](security/tls.md)
-   * [Conclusion](security/conclusion.md)
 * [HTTP](http/README.md)
    * [Overview of HTTP](http/overview_of_http.md)
    * [Simple user-agents](http/simple_user-agents.md)
