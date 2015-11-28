@@ -7,9 +7,7 @@
     "pluginsConfig": {
             "edit-link": {
                 "base": "https://github.com/tumregels/Network-Programming-with-Go/edit/master",
-                "label": {
-                    "en": "Edit This Page"
-                }
+                "label": "Edit This Page"
             }
     }
 }
