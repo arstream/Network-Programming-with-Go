@@ -104,5 +104,5 @@
    * [Channel server](networkchannels/channel_server.md)
    * [Channel client](networkchannels/channel_client.md)
    * [Handling Timeouts](networkchannels/handling_timeouts.md)
-   * Channels of channels
+   * [Channels of channels](networkchannels/channels_of_channels.md)
 
