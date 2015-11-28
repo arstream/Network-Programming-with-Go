@@ -1,4 +1,4 @@
-# State
+## State
 
  Applications often make use of state information to simplify what is going on. For example
 
