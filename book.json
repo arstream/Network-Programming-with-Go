@@ -9,6 +9,9 @@
             "edit-link": {
                 "base": "https://github.com/tumregels/Network-Programming-with-Go/edit/master",
                 "label": "Edit This Page"
+            },
+            "github": {
+                "url": "https://github.com/tumregels/Network-Programming-with-Go"
             }
     }
 }
