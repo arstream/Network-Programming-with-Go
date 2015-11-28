@@ -102,5 +102,5 @@
    * [JSON](rpc/json.md)
 * [Network channels](networkchannels/README.md)
    * [Channel server](networkchannels/channel_server.md)
-   * Channel client
+   * [Channel client](networkchannels/channel_client.md)
 
