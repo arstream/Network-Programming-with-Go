@@ -46,7 +46,6 @@
    * [Simple Example](applevelprotocols/simple_example.md)
    * [State](applevelprotocols/state.md)
 * [Managing character sets and encodings](encoding/README.md)
-   * [Introduction](encoding/introduction.md)
    * [Definitions](encoding/definitions.md)
    * [ASCII](encoding/ascii.md)
    * [ISO 8859](encoding/iso_8859.md)
