@@ -22,4 +22,3 @@ It would be nice from a technical viewpoint if the world just used ASCII. Howeve
 *Localisation* (l10n) is the process of customising your internationalised application to a particular cultural group.
 
 i18n and l10n are big topics in themselves. For example, they cover issues such as colours: while white means "purity" in Western cultures, it means "death" to the Chinese and "joy" to Egyptians. In this chapter we just look at issues of character handling. 
-
