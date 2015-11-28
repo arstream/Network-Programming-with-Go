@@ -45,7 +45,6 @@
    * [Data Format](applevelprotocols/data_format.md)
    * [Simple Example](applevelprotocols/simple_example.md)
    * [State](applevelprotocols/state.md)
-   * [Summary](applevelprotocols/summary.md)
 * [Managing character sets and encodings](encoding/README.md)
    * [Introduction](encoding/introduction.md)
    * [Definitions](encoding/definitions.md)
