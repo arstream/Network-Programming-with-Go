@@ -100,5 +100,5 @@
 * [Remote Procedure Call](rpc/README.md)
    * [Go RPC](rpc/go_rpc.md)
    * [JSON](rpc/json.md)
-* Network Channels
+* [Network channels](networkchannels/README.md)
 
