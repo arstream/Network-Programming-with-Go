@@ -101,4 +101,5 @@
    * [Go RPC](rpc/go_rpc.md)
    * [JSON](rpc/json.md)
 * [Network channels](networkchannels/README.md)
+   * Channel server 
 
