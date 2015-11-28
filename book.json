@@ -1,7 +1,13 @@
 {
     "gitbook": "2.6.x",
     "plugins": [
-        "katex@1.1.3"
+        "katex@1.1.3",
+        "edit-link"
     ],
-    "pluginsConfig": {}
+    "pluginsConfig": {
+            "edit-link": {
+                "base": "https://github.com/tumregels/Network-Programming-with-Go/edit/master",
+                "label": "Edit This Page"
+            }
+    }
 }
