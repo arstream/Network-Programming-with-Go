@@ -6,3 +6,8 @@ In the simplest cases, a lookup table will suffice. But that doesn't always work
 
 Go does not at present give any language or package support for these other character sets. So you either avoid their use, fail to talk to applications that do use them, or write lots of your own code!
 
+## Conclusion
+
+There hasn't been much code in this chapter. Instead, there have been some of the concepts of a very complex area. It's up to you: if you want to assume everyone speaks US English then the world is simple. But if you want your applications to be usable by the rest of the world, then you need to pay attention to these complexities.
+
+
