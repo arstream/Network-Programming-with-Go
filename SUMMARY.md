@@ -102,4 +102,5 @@
    * [The Message object](the_message_object.md)
    * [The JSON object](the_json_object.md)
    * [The Codec type](the_codec_type.md)
+   * Web sockets over TLS
 
