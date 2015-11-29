@@ -1,0 +1,2 @@
+# The Codec type
+
