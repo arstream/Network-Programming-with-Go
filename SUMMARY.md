@@ -98,5 +98,5 @@
    * [Handling Timeouts](networkchannels/handling_timeouts.md)
    * [Channels of channels](networkchannels/channels_of_channels.md)
 * [Web sockets](web_sockets.md)
-   * Web socket server
+   * [Web socket server](web_socket_server.md)
 
