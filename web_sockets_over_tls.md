@@ -60,5 +60,9 @@ The client is the same echo client as before. All that changes is the url, which
 EchoClient wss://localhost:12345/
 ```
 
+## Conclusion
+
+The web sockets standard is nearing completion and no major changes are anticipated. This will allow HTTP user agents and servers to set up bi-directional socket connections and should make certain interaction styles much easier. Go has nearly complete support for web sockets. 
+
 
 
