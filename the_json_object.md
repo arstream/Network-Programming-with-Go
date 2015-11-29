@@ -2,11 +2,11 @@
 
 It is expected that many websocket clients and servers will exchange data in JSON format. For Go programs this means that a Go object will be marshalled into JSON format as described in [Chapter 4: Serialisation](../dataserialisation/README.md) and then sent as a UTF-8 string, while the receiver will read this string and unmarshal it back into a Go object.
 
-The websocket convenience object JSON will do this for you. It has methods Send and Receive for sending and receiving data, just like the Message object.
+The `websocket` convenience object `JSON` will do this for you. It has methods `Send` and `Receive` for sending and receiving data, just like the `Message` object.
 
-A client that sends a Person object in JSON format is
+A client that sends a `Person` object in JSON format is
 
-
+```go
 /* PersonClientJSON
  */
 package main
@@ -50,10 +50,11 @@ func checkError(err error) {
 		os.Exit(1)
 	}
 }
+```
 
 and a server that reads it is
 
-
+```go
 /* PersonServerJSON
  */
 package main
@@ -97,5 +98,4 @@ func checkError(err error) {
 		os.Exit(1)
 	}
 }
-
-
+```
