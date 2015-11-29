@@ -1,2 +1,2 @@
-# The Message object
+## The Message object
 
