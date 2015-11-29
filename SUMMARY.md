@@ -99,4 +99,5 @@
    * [Channels of channels](networkchannels/channels_of_channels.md)
 * [Web sockets](web_sockets.md)
    * [Web socket server](web_socket_server.md)
+   * The Message object
 
